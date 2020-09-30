@@ -24,4 +24,3 @@ function Calculator() {
       this.methods[name] = func;
     };
   }
-  //not finalized

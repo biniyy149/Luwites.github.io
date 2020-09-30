@@ -10,4 +10,3 @@ function unique(arr) {
 
     return result;
 }
-//not finalized

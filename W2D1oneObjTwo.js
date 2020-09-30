@@ -1,10 +1,10 @@
 /*eslint-disable*/
 let obj = {};
 
-function A() {
+function xyz() {
     return obj;
 }
-function B() {
+function abc() {
     return obj;
 }
-// not finalized
+console.log(new xyz() == new abc())
