@@ -17,4 +17,3 @@ let calculator = new Calculator();
 calculator.read();
 
 console.log(calculator.mul());
-// finalized

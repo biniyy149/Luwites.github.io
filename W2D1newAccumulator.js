@@ -12,4 +12,3 @@ function Accumulator(startingValue) {
 let accumulator = new Accumulator(3);
 accumulator.read();
 console.log(accumulator.value());
-// finalized
