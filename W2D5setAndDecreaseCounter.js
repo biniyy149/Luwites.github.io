@@ -11,5 +11,7 @@ function makeCounter() {
 
     return counter;
 }
-let callCounter = makeCounter;
-callCounter();
+let callCounter = makeCounter();
+console.log(callCounter());
+console.log(callCounter.set(6));
+console.log(callCounter.decrease());
