@@ -1,4 +1,4 @@
-const prompt = require("prompt-sync")();
+//const prompt = require("prompt-sync")();
 function askPassword(ok, fail) {
     let password = prompt("Password?", '');
     if (password == "rockstar") ok();
