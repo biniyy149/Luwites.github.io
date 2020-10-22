@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styleFinal.css" rel="stylesheet" />
+    <script src="./libraryFinal.js"></script>
+    <script src="./actionFinal.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <h1>WELCOME TO THE LIBRARY</h1>
+        <label>Please enter your name and click pull info button:</label>
+        <button onclick="pullInfo()">Pull Info</button><br><br>
+        <input type="text" id="student_name" class="fadeIn second" placeholder="Type Your Name Here"/> <br><br>
+        
+        <span id="info">choose books you like to borrow and click Pull Info button</span><br /><br>
+        <button onclick="add(event)" value="The Secret">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTcf3tc6Qjfn88mg00VsgS-TvcOVxnEUpn1wZTIRfBGBx8ENd3X-ZFhH1nCTg&usqp=CAc" width="200"
+                height="200" /></button>
+        <button onclick="add(event)" value="The Sky Is Falling">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYXbSzwfqqqB32TBQBvYLjsF9Tay3c-P0YXcvQsw&s=0"
+                width="200" height="200" /></button>
+        <button onclick="add(event)" value="The Jewels">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpV8GHNjZRECxgOZCtm7PAd1ReRewBuFOKIvev2zsqC8G9v7JFByX-9w&s=0" width="200"
+                height="200"></button>
+        <button onclick="add(event)" value="Sleeping Murder">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr4BZJFplWlTGC15GBTzfrzMOsncYvfwLy3XJxWF4YGdiMf29dvuk2sQ&s=0" width="200"
+                height="200"></button> 
+        <button onclick="add(event)" value="Where The Forest Meets The Stars">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRIXr0y2UqU4o-HGXUkUrgdn2SqlwMwZcV_PhJ9P2uyZQ-BkruFi7oTmpB-UdvIAxsqGjs-gpCYoZC-kgFJ3BFJ3gQmkZ22W49fBribpeevfEsKXoxPwvo&usqp=CAc" width="200"
+                height="200"></button>
+        <button onclick="add(event)" value="Think Big Act Small">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRkkUSBUrfaRX59bnV9dE1cnu8JGQ0j0lFsczcNn6HZMGc_eFeX_lHi_HYIH9iO5BNr9F3AnCFlBA&usqp=CAc" width="200"
+                height="200"></button><br>
+
+        <table id="booksOut">
+            <caption>Details Of Books Borrowed</caption>
+            <tr>
+                <th>Book</th>
+                <th>Late Charge Per Day In Dollars</th>
+                <th>DueDate</th>
+            </tr>
+        </table> <br>
+        <input type="text" id="book_title" />
+        <button onclick="returnBook()">Return Book</button>
+
+        <button id="btn-reset" onclick="clearAllBooks()">Reset</button>
+        <button id="btn-borrow" onclick="finishBorrowing()">Borrow</button>
+
+    </div>
+
+    
+
+    
