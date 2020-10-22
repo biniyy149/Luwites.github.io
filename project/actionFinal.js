@@ -29,12 +29,12 @@ function updateBooksOut(book) {
     let row = document.createElement("tr");
     let td1 = document.createElement("td");
     td1.innerHTML = book.name;
-    let td2 = document.createElement("td");
-    td2.innerHTML = book.overDueFee();
+    // let td2 = document.createElement("td");
+    // td2.innerHTML = book.overDueFee();
     let td3 = document.createElement("td");
     td3.innerHTML = book.dueDate;
     row.append(td1);
-    row.append(td2);
+    // row.append(td2);
     row.append(td3);
     table.append(row);
 }
@@ -63,11 +63,11 @@ function displayInfo() {
             td1.innerHTML = book.name;
             let td2 = document.createElement("td");
             td2.innerHTML = book.overDueFee();
-            let td3 = document.createElement("td");
-            td3.innerHTML = book.dueDate;
+            // let td3 = document.createElement("td");
+            // td3.innerHTML = book.dueDate;
             row.append(td1);
             row.append(td2);
-            row.append(td3);
+            // row.append(td3);
             table.append(row);
         }
     }

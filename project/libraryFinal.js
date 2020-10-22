@@ -59,7 +59,7 @@ class Book {
         this.calcDueDate = function(){
             let numWeeks = 2;
             let now = new Date();
-            now.setDate(now.getDate() + 7)
+            now.setDate(now.getDate() - 1)
             return now;
         }
         this._dueDate = 0;
