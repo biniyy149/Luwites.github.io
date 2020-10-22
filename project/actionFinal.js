@@ -7,16 +7,6 @@ function returnBook() {
     displayInfo();
 }
 
-// function returnAllBooks() {
-//     let student = library.students.get(document.getElementById("student_name").value);
-//     let books = currentStudent.libraryCard.booksOut.map(obj => obj.name);
-//     document.getElementById("info").innerHTML = `Hi ${currentStudent.name}, your current books are: ${books}`;
-
-// }
-// function total(book) {
-//     let owed = book.overDueFee();
-//     document.getElementById("total").innerHTML = `Hi ${currentStudent.name}, your total: ${owed}`;
-// }
 
 function add(event) {
     let book = library.librarybooks.get(event.target.parentNode.value);
